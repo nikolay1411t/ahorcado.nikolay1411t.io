@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">     
+    <title>Juego Ahorcado</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div id="seccion-menu">
+            <div class="titulo-ah"><h1>EL AHORCADO</h1></div>
+            <button id="empezar" class="btn_inicio border" onclick="comenzar(), sonidoBoton1()">Empezar</button>
+            <button id="aggPalabra" class="btn_inicio border" onclick="agregar_palabra(), sonidoBoton1()">Agregar Palabra</button>
+        </div>
+        <div id="seccion-agg">
+            <textarea name="" id="palabraAgregada" cols="35" rows="15"></textarea>
+            <div class="btns-agg">
+            <button class="btn-agg border"onclick="agregarYComenzar(), sonidoBoton2()">agregar y continuar</button>
+            <button class="btn-agg border"onclick="volver_al_menu(), sonidoBoton2()">volver</button>
+            </div>
+        </div>
+        <div id="seccion-ah">
+            <canvas width="350" height="550" class="canvas"></canvas>
+            <div class="btns-ah">
+            <button class="btn-ah border" onclick="nueva_partida(), sonidoBoton3()">nueva partida</button>
+            <button class="btn-ah border" onclick="volver_al_menu(),sonidoBoton3()">desistir</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer"> 
+            <div class="footer-texto"><a >Creado por Nikolay Tipanluiza</a></div>
+            <div class="footer-iconos">
+            <a href="https://github.com/nikolay1411t" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nikolaytyd/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+   <script src="js/logica.js"></script>
+   <script src="js/canvas.js"></script>
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="https://kit.fontawesome.com/548075e603.js" crossorigin="anonymous"></script>
+   
+   
+</body>
+</html>

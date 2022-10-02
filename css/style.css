@@ -1,0 +1,317 @@
+:root{
+    --color_ahorcado:transparent;
+}
+html {
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    /*background-image: linear-gradient(to right, #5a0134, #640341, #6e084f, #770f5e, #7e186f, #7a368f, #6d4fad, #5566c8, #008ce3, #00adec, #00cbe6, #47e5db);*/
+    background-image: linear-gradient(to top, #5a0134,  #6d4fad, #5566c8, #008ce3, #00adec, #00cbe6, #47e5db);
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+    max-width: 1400px;
+}
+*{
+    box-sizing: border-box;
+}
+
+footer{
+    width: 100%;
+    height: 10vh;
+}
+main{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.border{
+    border-radius: 20px;
+}
+
+
+
+/*CONFIGURACION POR DEFECTO*/
+#seccion-menu {
+    width: 70%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo-ah{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 45%;
+    color: #5a0134;
+    text-shadow: 0 0 10px #760c48
+}
+
+.btn_inicio {
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    width: 45%;
+    margin: 20px;
+    background-color: #ffffff35;
+    border-color: #ffffff;
+    color: #5a0134;
+    border: none;
+    scale: 1.1;
+    padding: 15px;
+}
+
+.btn_inicio:hover {
+    background-color: #5a0134;
+    scale: 1.2;
+    color: #47e5db;
+    box-shadow: 0 0 10px #5a0134, 0 0 40px #5a0134,
+    0 0 80px #5a0134;
+}
+.btn_inicio:active {
+    background-color: #5a0134;
+    scale: 1.2;
+    color: #47e5db;
+    box-shadow: 0 0 10px #5a0134, 0 0 40px #5a0134,
+    0 0 80px #5a0134;
+}
+
+
+
+
+
+/*SECCION AHORCADO*/
+.canvas {
+    width: 100%;
+}
+
+#seccion-ah {
+    display: none;
+}
+
+.btns-ah{
+    display: flex;
+}
+.btn-ah {
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: 45%;
+    margin: 12px;
+    font-size: 1rem;
+    background-color: #ffffff35;
+    border-color: #ffffff;
+    color: #5a0134;
+    border: none ;
+    scale: 1.1;
+    padding: 8px;
+}
+.btn-ah:hover {
+    background-color: #5a0134;
+    scale: 1.2;
+    color: #47e5db;
+    box-shadow: 0 0 10px #5a0134, 0 0 40px #5a0134,
+    0 0 80px #5a0134;
+}
+.btn-ah:active {
+    background-color: #5a0134;
+    scale: 1.2;
+    color: #47e5db;
+    box-shadow: 0 0 10px #5a0134, 0 0 40px #5a0134,
+    0 0 80px #5a0134;
+}
+
+
+
+/*SECCION DE AGREGAR NUEVA PALABRA*/
+
+#seccion-agg{
+    display: none;
+    margin: auto auto;
+}
+#palabraAgregada{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #5a0134;
+    box-shadow: 0 0 40px #5a0134;
+    border-radius: 15px;
+}
+#palabraAgregada:focus{
+    outline: none;
+}
+.btns-agg{
+    display: flex;
+    align-content: center;
+    margin: 10px 0;
+}
+.btn-agg{
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: 45%;
+    margin: 10px;
+    font-size: 1rem;
+    background-color: #ffffff35;
+    border-color: #ffffff;
+    color: #5a0134;
+    border: none;
+    scale: 1;
+    padding: 8px;
+}
+.btn-agg:hover {
+    background-color: #5a0134;
+    scale: 1.1;
+    color: #47e5db;
+    box-shadow: 0 0 10px #5a0134, 0 0 40px #5a0134,
+    0 0 80px #5a0134;
+}
+.btn-agg:active {
+    background-color: #5a0134;
+    scale: 1.1;
+    color: #47e5db;
+    box-shadow: 0 0 10px #5a0134, 0 0 40px #5a0134,
+    0 0 80px #5a0134;
+}
+
+
+/*SECCION DE SWEET ALERT*/
+
+.sat{
+    font-size: 2rem;
+    font-family: "Rubik", Courier, monospace;
+    text-transform: uppercase;
+}
+/*SECCION FOOTER */
+.footer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer a{
+    color:#47e5db;
+    font-size: 1.5rem;
+}
+
+/*SECCION FOOTER ICONOS*/
+.fa-github{
+    color: #47e5db;
+    font-size: 25px;
+}
+.fa-github:hover{
+    color:#000000;
+    transition: 500ms;
+}
+.fa-linkedin{
+    color: #47e5db;
+    font-size: 25px;
+}
+.fa-linkedin:hover{
+    color:#0e76a8;
+    transition: 500ms;
+}
+
+/*Responsive design*/
+@media (min-width: 570px) {
+    body { font-size: 15px; }
+    .footer-texto {
+        margin-bottom: 10px;
+    }
+    .footer a i{
+        margin: 0 10px;
+        font-size: 1.8rem;
+    }
+    .footer a i{
+        scale: 1.2;
+    }
+    .titulo-ah{
+        font-size: 3rem;
+    }
+    .btns-agg{
+        margin-top: 10vh;
+    }
+  }
+
+ @media (min-width: 768px) {
+    body { font-size: 15px; }
+    #seccion-agg{
+        margin: auto auto;
+        width: 70%;
+    }
+    #palabraAgregada{
+        border: none;
+        background-color: #ffffff45;
+        box-shadow: none ;
+        font-size: 1rem;
+    }
+    .footer a i{
+        scale: 1.4;
+    }
+  }
+  
+  /* escritorio normales */
+  @media (min-width: 992px) {
+    body { font-size: 16px; 
+    background-image: linear-gradient(to right,#5a0134,  #6d4fad, #5566c8, #008ce3, #00adec, #00cbe6, #47e5db);
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    }
+    main{
+        order: 1;
+    }
+    footer{
+        width: 10%;
+        height: 100vh;
+    }
+    .footer{
+        order: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px;
+        justify-content: space-between;
+    }
+    .footer a i{
+        scale: 2;
+        order: 0;
+    }
+    .footer a{
+        order: 1;
+        text-align: left;
+        font-weight: lighter;
+        font-size: 2rem;
+    }
+    .titulo-ah{
+        font-size: 4rem;
+
+    }
+    #seccion-menu {
+        padding: 100px auto;
+    }
+    .titulo-ah {
+        margin-bottom: 20%;
+    }
+    .footer-texto {
+        text-align: left;
+    }
+    .footer-iconos {
+        margin-top: 5vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 150px;
+    }
+    
+  }
+  
+  /* pantallas grandes */
+  @media (min-width: 1200px) {
+    body { font-size: 17px; }
+  }
